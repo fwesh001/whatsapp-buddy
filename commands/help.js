@@ -164,7 +164,7 @@ AVAILABLE COMMANDS:
 ╚═══════════════════╝
 \`\`\`
 
-✉️ Join our channel for updates:`;
+`;
 
     try {
 
