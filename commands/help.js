@@ -163,15 +163,14 @@ AVAILABLE COMMANDS:
 ║ ✧ 📁 .repo
 ╚═══════════════════╝
 \`\`\`
-
-✉️ Join our channel for updates:`;
+`;
 
     try {
 
         // Send intro message FIRST
 await sock.sendMessage(chatId, {
-    text: "```📜 Here's the help menu! (Use . as the prefix)```",
-    quoted: message
+    text: "```📜 Here's the help menu! (Use . as the prefix)```", // <- Bolded the dot with WhatsApp formatting
+    quoted: null
 });
 
         
