@@ -1,6 +1,6 @@
 const settings = {
   packname: 'MAX👾🤖👾',
-  author: '‎',
+  author: '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
   botName: "MAX👾🤖👾",
   botOwner: '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜', // Your name
   ownerNumber: '2349019593175', //Set your number here without + symbol, just add country code & number without any space

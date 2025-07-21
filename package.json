@@ -1,7 +1,7 @@
 {
-  "name": "knightbot",
-  "version": "1.0.0",
-  "description": "WhatsApp Bot",
+  "name": "MAX👾🤖👾",
+  "version": "2.0.0",
+  "description": "Whatsapp-Buddy",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

@@ -75,7 +75,7 @@ const store = {
 
 let phoneNumber = "2349019593175"
 
-global.botname = "MAX BOT 👾🤖👾"
+global.botname = "MAX👾🤖👾"
 global.themeemoji = "•"
 
 const settings = require('./settings')
