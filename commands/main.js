@@ -100,7 +100,7 @@ const imagineCommand = require('./commands/imagine');
 global.packname = settings.packname;
 global.author = settings.author;
 global.channelLink = "https://whatsapp.com/channel/0029VbAhWo3C6Zvf2t4Rne0h";
-global.ytch = "𝕊𝔸𝕄𝕂𝕀𝔼𝕃 𝔹𝕆𝕋";
+global.ytch = "MAX👾🤖👾";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -109,7 +109,7 @@ const channelInfo = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363161513685998@newsletter',
-            newsletterName: '𝕊𝔸𝕄𝕂𝕀𝔼𝕃 𝔹𝕆𝕋',
+            newsletterName: 'MAX👾🤖👾',
             serverMessageId: -1
         }
     }
@@ -172,7 +172,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
           // Basic message response in private chat
           if (!isGroup && (userMessage === 'hi' || userMessage === 'hello' || userMessage === 'bot' || userMessage === 'hlo' || userMessage === 'hey' || userMessage === 'bro')) {
               await sock.sendMessage(chatId, {
-                  text: 'Hi, How can I help you?\nYou can use .menu for more info and commands.',
+                  text: 'Hi Buddy, How can I help you Today?\nYou can use .menu for more info and commands.',
                   ...channelInfo
               });
               return;
@@ -204,8 +204,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
         const ownerCommands = ['.mode', '.autostatus', '.antidelete', '.cleartmp', '.setpp', '.clearsession', '.areact', '.autoreact'];
         const isOwnerCommand = ownerCommands.some(cmd => userMessage.startsWith(cmd));
 
-        let isSenderAdmin = false;
-        let isBotAdmin = false;
+        let isSenderAdmin = true;
+        let isBotAdmin = true;
 
         // Check admin status only for admin commands in groups
         if (isGroup && isAdminCommand) {
@@ -319,7 +319,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.mode'):
                 // Check if sender is the owner
                 if (!message.key.fromMe) {
-                    await sock.sendMessage(chatId, { text: 'Only bot owner can use this command!', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: 'Only ⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜ can use this command!', ...channelInfo });
                     return;
                 }
                 // Read current data first

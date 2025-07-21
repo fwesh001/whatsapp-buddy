@@ -38,7 +38,7 @@ const convertStickerToImage = async (sock, quotedMessage, chatId) => {
         await sharp(stickerFilePath).toFormat('png').toFile(outputImagePath);
 
         const imageBuffer = await fsPromises.readFile(outputImagePath);
-        await sock.sendMessage(chatId, { image: imageBuffer, caption: 'Here is the converted image!' });
+        await sock.sendMessage(chatId, { image: imageBuffer, caption: 'Here is the converted image!',text: 'MAX👾🤖👾' });
 
         scheduleFileDeletion(stickerFilePath);
         scheduleFileDeletion(outputImagePath);

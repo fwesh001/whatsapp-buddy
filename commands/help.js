@@ -18,7 +18,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🌐 GENERAL COMMANDS:
-║║║
+➤
 ║ ✧ 🛎️ .help 
 ║ ✧ 🏓 .ping
 ║ ✧ 🟢 .alive
@@ -42,7 +42,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 👮‍♂️ ADMIN COMMANDS:
-║║║
+➤
 ║ ✧ 🔨 .ban @user
 ║ ✧ ⬆️ .promote @user
 ║ ✧ ⬇️ .demote @user
@@ -63,7 +63,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🔒 OWNER COMMANDS:
-║║║
+➤
 ║ ✧ 🛠️ .mode
 ║ ✧ 📤 .autostatus
 ║ ✧ 🗑️ .clearsession
@@ -75,7 +75,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🎨 IMAGE/STICKER COMMANDS:
-║║║
+➤
 ║ ✧ 🌀 .blur <image>
 ║ ✧ 🌅 .simage <reply to sticker>
 ║ ✧ 🖼️ .sticker <reply to image>
@@ -87,7 +87,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🎮 GAME COMMANDS:
-║║║
+➤
 ║ ✧ 🎮 .tictactoe @user
 ║ ✧ 🧩 .hangman
 ║ ✧ 🔡 .guess <letter>
@@ -99,14 +99,14 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🤖 AI COMMANDS:
-║║║
+➤
 ║ ✧ 💡 .gpt <question>
 ║ ✧ 🧠 .gemini <question>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
 🎯 FUN COMMANDS:
-║║║
+➤
 ║ ✧ 🌟 .compliment @user
 ║ ✧ 😡 .insult @user
 ║ ✧ 💌 .flirt 
@@ -122,7 +122,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 🔤 TEXTMAKER:
-║║║
+➤
 ║ ✧ ✨ .metallic <text>
 ║ ✧ ❄️ .ice <text>
 ║ ✧ ⛄ .snow <text>
@@ -145,7 +145,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 📥 DOWNLOADER:
-║║║
+➤
 ║ ✧ 🎵 .play <song_name>
 ║ ✧ 🎧 .song <song_name>
 ║ ✧ 📸 .instagram <link>
@@ -155,7 +155,7 @@ AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
 💻 GITHUB COMMANDS:
-║║║
+➤
 ║ ✧ 🧩 .git
 ║ ✧ 🛠️ .github
 ║ ✧ ⚙️ .sc
@@ -164,14 +164,14 @@ AVAILABLE COMMANDS:
 ╚═══════════════════╝
 \`\`\`
 
-`;
+✉️ Join our channel for updates:`;
 
     try {
 
         // Send intro message FIRST
 await sock.sendMessage(chatId, {
-    text: "```📜 Here's the help menu! (Use . as the prefix)```", // <- Bolded the dot with WhatsApp formatting
-    quoted: null
+    text: "```📜 Here's the help menu! (Use . as the prefix)```",
+    quoted: message
 });
 
         
@@ -202,7 +202,7 @@ await sock.sendMessage(chatId, {
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363400862271383@newsletter',
-                        newsletterName: 'Made with 🤍 by Ԇ・SAMKIEL',
+                        newsletterName: 'Made with 🤍 by ⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
                         serverMessageId: -1
                     } 
                 }

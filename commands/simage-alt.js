@@ -2,6 +2,7 @@ var { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 var { exec } = require('child_process');
 var fs = require('fs');
 const ffmpeg = require('ffmpeg-static');
+const { text } = require('stream/consumers');
 
 async function simageCommand(sock, quotedMessage, chatId) {
     try {
@@ -31,7 +32,8 @@ async function simageCommand(sock, quotedMessage, chatId) {
 
         await sock.sendMessage(chatId, { 
             image: fs.readFileSync(tempOutput),
-            caption: '✨ Here\'s your image!' 
+            caption: '✨ Here\'s your image!',
+            text: 'MAX👾🤖👾'
         });
 
         // Cleanup
