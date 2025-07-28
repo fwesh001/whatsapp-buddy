@@ -6,7 +6,7 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
+            newsletterJid: '120363422910625050@newsletter',
             newsletterName: '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
             serverMessageId: -1
         }

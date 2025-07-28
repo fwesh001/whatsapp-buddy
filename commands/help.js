@@ -6,8 +6,10 @@ async function helpCommand(sock, chatId, channelLink) {
     const helpMessage = `
 
 ╔════════════════════╗
+   🧑‍💻 USER:  @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}
+   📅 Date: *${new Date().toLocaleString()}*
    🤖 *${settings.botName|| 'MAX👾🤖👾'}*  
-   🌟 VERSION:   *${settings.version|| '2.0'}*
+   🌟 VERSION:   *${settings.version|| '2.0.0'}*
    🛠️ DEVELOPER: *${settings.botOwner|| '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜'}*
    🧩 PREFIX: *.*
    🔗 GITHUB: *@FWESH001*
@@ -17,40 +19,41 @@ async function helpCommand(sock, chatId, channelLink) {
 AVAILABLE COMMANDS:
 
 ╔═══════════════════╗
-🌐 GENERAL COMMANDS:
+🧰 GENERAL COMMANDS:
 ➤
-║ ✧ 🛎️ .help 
-║ ✧ 🏓 .ping
-║ ✧ 🟢 .alive
-║ ✧ 🗣️ .tts <text>
-║ ✧ 👤 .owner
-║ ✧ 😂 .joke
-║ ✧ 💭 .quote
-║ ✧ 🤔 .fact
-║ ✧ 🌦️ .weather <city>
-║ ✧ 📰 .news
-║ ✧ 🎨 .attp <text>
-║ ✧ 🎵 .lyrics <song_title>
-║ ✧ 🎱 .8ball <question>
-║ ✧ 🏷️ .groupinfo
-║ ✧ 👥 .staff or .admins 
-║ ✧ 🆚 .vv
-║ ✧ 💌 .pair or .rent
-║ ✧ 🌍 .trt <text> <lang>
-║ ✧ 📸 .ss <link>
+║ ✧ 🧭 .help 
+║ ✧ 📶 .ping
+║ ✧ 💡 .alive
+║ ✧ 🔊 .tts <text>
+║ ✧ 👑 .owner
+║ ✧ 🤣 .joke
+║ ✧ 🧘 .quote
+║ ✧ 📚 .fact
+║ ✧ 🌤️ .weather <city>
+║ ✧ 🗞️ .news
+║ ✧ 💥 .attp <text>
+║ ✧ 🎤 .lyrics <song_title>
+║ ✧ 🔮 .8ball <question>
+║ ✧ 📌 .groupinfo
+║ ✧ 🛡️ .staff or .admins 
+║ ✧ ⚔️ .vv
+║ ✧ 💘 .pair or .rent
+║ ✧ 🈯 .trt <text> <lang>
+║ ✧ 🖼️ .ss <link>
 ╚═══════════════════╝ 
 
 ╔═══════════════════╗
 👮‍♂️ ADMIN COMMANDS:
 ➤
-║ ✧ 🔨 .ban @user
-║ ✧ ⬆️ .promote @user
-║ ✧ ⬇️ .demote @user
-║ ✧ ⏱️ .mute <minutes>
+║ ✧ 🔴 .ban @user
+║ ✧ 🟢 .unban @user
+║ ✧ 🔺 .promote @user
+║ ✧ 🔻 .demote @user
+║ ✧ 🔇 .mute <minutes>
 ║ ✧ 🔊 .unmute
-║ ✧ ❌ .delete or .del
-║ ✧ 🚫 .kick @user
-║ ✧ 📊 .warnings @user
+║ ✧ 🗑️ .delete or .del
+║ ✧ 🚷  .kick @user
+║ ✧ 📋  .warnings @user
 ║ ✧ ⚠️ .warn @user
 ║ ✧ 🔗 .antilink
 ║ ✧ 🛡️ .antibadword
@@ -58,42 +61,42 @@ AVAILABLE COMMANDS:
 ║ ✧ 📣 .tag <message>
 ║ ✧ 📢 .tagall
 ║ ✧ 🤖 .chatbot
-║ ✧ 🔄 .resetlink
+║ ✧ ♻️ .resetlink
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🔒 OWNER COMMANDS:
+👑 OWNER COMMANDS:
 ➤
-║ ✧ 🛠️ .mode
-║ ✧ 📤 .autostatus
-║ ✧ 🗑️ .clearsession
-║ ✧ 🔍 .antidelete
-║ ✧ 🧽 .cleartmp
+║ ✧ 🎛️ .mode
+║ ✧ 🚀 .autostatus
+║ ✧ 🧨 .clearsession
+║ ✧ 🕵️‍♂️ .antidelete
+║ ✧ 🧹 .cleartmp
 ║ ✧ 🖼️ .setpp <reply to image>
 ║ ✧ 🤖 .autoreact
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎨 IMAGE/STICKER COMMANDS:
+🖌️ IMAGE/STICKER COMMANDS:
 ➤
-║ ✧ 🌀 .blur <image>
-║ ✧ 🌅 .simage <reply to sticker>
-║ ✧ 🖼️ .sticker <reply to image>
-║ ✧ 🎴 .tgsticker <Link>
-║ ✧ 🤣 .meme
-║ ✧ ✍️ .take <packname>
-║ ✧ 🔀 .emojimix <emj1>+<emj2>
+║ ✧ 🌫️ .blur <image>
+║ ✧ 🖼️ .simage <reply to sticker>
+║ ✧ 🧊 .sticker <reply to image>
+║ ✧ 🎨 .tgsticker <Link>
+║ ✧ 😂 .meme
+║ ✧ 🏷️ .take <packname>
+║ ✧ ⚡ .emojimix <emj1>+<emj2>
 ╚═══════════════════╝  
 
 ╔═══════════════════╗
-🎮 GAME COMMANDS:
+🕹️ GAME COMMANDS:
 ➤
-║ ✧ 🎮 .tictactoe @user
+║ ✧ ❌⭕ .tictactoe @user
 ║ ✧ 🧩 .hangman
-║ ✧ 🔡 .guess <letter>
+║ ✧ 🔠 .guess <letter>
 ║ ✧ 🧠 .trivia
-║ ✧ ❓ .answer <answer>
-║ ✧ 💬 .truth
+║ ✧ 🗯️ .answer <answer>
+║ ✧ 🤫 .truth
 ║ ✧ 🎯 .dare
 ╚═══════════════════╝
 
@@ -107,50 +110,50 @@ AVAILABLE COMMANDS:
 ╔═══════════════════╗
 🎯 FUN COMMANDS:
 ➤
-║ ✧ 🌟 .compliment @user
-║ ✧ 😡 .insult @user
-║ ✧ 💌 .flirt 
-║ ✧ 🎤 .shayari
-║ ✧ 🌙 .goodnight
-║ ✧ 🌹 .roseday
-║ ✧ 🧙‍♂️ .character @user
-║ ✧ ☠️ .wasted @user
-║ ✧ ❤️‍🔥 .ship @user
-║ ✧ 😘 .simp @user
-║ ✧ 🤦‍♂️ .stupid @user [text]
+║ ✧ 😎 .compliment @user
+║ ✧ 🔥 .insult @user
+║ ✧ 💘 .flirt 
+║ ✧ 🎭 .shayari
+║ ✧ 💤 .goodnight
+║ ✧ 🌸 .roseday
+║ ✧ 🧝‍♂️ .character @user
+║ ✧ 💀 .wasted @user
+║ ✧ 💘 .ship @user
+║ ✧ 🤤 .simp @user
+║ ✧ 🧠 .stupid @user [text]
 ╚═══════════════════╝
 
 ╔═══════════════════╗
 🔤 TEXTMAKER:
 ➤
-║ ✧ ✨ .metallic <text>
-║ ✧ ❄️ .ice <text>
-║ ✧ ⛄ .snow <text>
-║ ✧ 🌟 .impressive <text>
-║ ✧ 🖥️ .matrix <text>
+║ ✧ ⚙️ .metallic <text>
+║ ✧ 🧊 .ice <text>
+║ ✧ 🌨️ .snow <text>
+║ ✧ ✨ .impressive <text>
+║ ✧ 🧬 .matrix <text>
 ║ ✧ 💡 .light <text>
 ║ ✧ 🌈 .neon <text>
-║ ✧ 😈 .devil <text>
-║ ✧ 💜 .purple <text>
+║ ✧ 👿 .devil <text>
+║ ✧ 💟 .purple <text>
 ║ ✧ ⚡ .thunder <text>
 ║ ✧ 🍃 .leaves <text>
-║ ✧ 🎞️ .1917 <text>
+║ ✧ 🎬 .1917 <text>
 ║ ✧ 🛡️ .arena <text>
-║ ✧ 🖥️ .hacker <text>
-║ ✧ 🏖️ .sand <text>
-║ ✧ 🎤 .blackpink <text>
-║ ✧ 🖥️ .glitch <text>
+║ ✧ 🧑‍💻 .hacker <text>
+║ ✧ 🏝️ .sand <text>
+║ ✧ 🎙️ .blackpink <text>
+║ ✧ 💻 .glitch <text>
 ║ ✧ 🔥 .fire <text>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
 📥 DOWNLOADER:
 ➤
-║ ✧ 🎵 .play <song_name>
-║ ✧ 🎧 .song <song_name>
-║ ✧ 📸 .instagram <link>
-║ ✧ 📘 .facebook <link>
-║ ✧ 🎬 .tiktok <link>
+║ ✧ 🎶 .play <song_name>
+║ ✧ 🎼 .song <song_name>
+║ ✧ 📷 .instagram <link>
+║ ✧ 📙 .facebook <link>
+║ ✧ 🎥 .tiktok <link>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
@@ -163,15 +166,21 @@ AVAILABLE COMMANDS:
 ║ ✧ 📁 .repo
 ╚═══════════════════╝
 \`\`\`
-`;
+
+✉️ Join our channel for updates:`;
 
     try {
 
-        // Send intro message FIRST
-await sock.sendMessage(chatId, {
-    text: "```📜 Here's the help menu! (Use . as the prefix)```", // <- Bolded the dot with WhatsApp formatting
-    quoted: null
+        //Sent after the .menu cmd is used
+        await sock.sendMessage(chatId, {
+  text: "```👋 Hey\n🧑‍💻 USER: @"+(message.key.participant 
+         ? message.key.participant.split('@')[0] 
+         : message.key.remoteJid.split('@')[0])
+         +"\n📜 Here's the help menu! (Use . as the prefix)```",
+  mentions: [message.key.participant || message.key.remoteJid],
+  quoted: null
 });
+
 
         
         const imagePath = path.join(__dirname, '../assets/bot_image.jpeg');
@@ -186,7 +195,7 @@ await sock.sendMessage(chatId, {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363400862271383@newsletter',
+                        newsletterJid: '120363422910625050@newsletter',
                         newsletterName: 'Made with 🤍 by ⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
                         serverMessageId: -1
                     }
@@ -200,7 +209,7 @@ await sock.sendMessage(chatId, {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363400862271383@newsletter',
+                        newsletterJid: '120363422910625050@newsletter',
                         newsletterName: 'Made with 🤍 by ⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
                         serverMessageId: -1
                     } 

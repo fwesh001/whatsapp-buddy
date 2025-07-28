@@ -2,9 +2,8 @@ async function githubCommand(sock, chatId) {
     const repoInfo = `*MAX👾🤖👾*
 
 *📂 GitHub Repository:*
-https://github.com/Fwesh001/Whats-Buddy
-
-*📢 Official Channel:*
+https://github.com/fwesh001/whatsapp-buddy
+*📢 Official Youtube Channel:*
 https://youtube.com/@zab.dfwesh
 
 _Star ⭐ the repository if you like the bot!_`;
@@ -16,7 +15,7 @@ _Star ⭐ the repository if you like the bot!_`;
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363161513685998@newsletter',
+                    newsletterJid: '120363422910625050@newsletter',
                     newsletterName: '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜',
                     serverMessageId: -1
                 }
