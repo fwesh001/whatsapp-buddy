@@ -148,7 +148,7 @@ async function startXeonBotInc() {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363400862271383@newsletter',
+                                newsletterJid: '120363422910625050@newsletter',
                                 newsletterName: 'MAX👾🤖👾',
                                 serverMessageId: -1
                             }
@@ -247,7 +247,7 @@ Made With 🤍 by *⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜*
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363400862271383@newsletter',
+                        newsletterJid: '120363422910625050@newsletter',
                         newsletterName: 'MAX BOT 👾🤖👾',
                         serverMessageId: -1
                     }
