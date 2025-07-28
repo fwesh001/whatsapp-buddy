@@ -6,8 +6,6 @@ async function helpCommand(sock, chatId, channelLink) {
     const helpMessage = `
 
 ╔════════════════════╗
-   🧑‍💻 USER:  @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}
-   📅 Date: *${new Date().toLocaleString()}*
    🤖 *${settings.botName|| 'MAX👾🤖👾'}*  
    🌟 VERSION:   *${settings.version|| '2.0.0'}*
    🛠️ DEVELOPER: *${settings.botOwner|| '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜'}*
@@ -173,11 +171,7 @@ AVAILABLE COMMANDS:
 
         //Sent after the .menu cmd is used
         await sock.sendMessage(chatId, {
-  text: "```👋 Hey\n🧑‍💻 USER: @"+(message.key.participant 
-         ? message.key.participant.split('@')[0] 
-         : message.key.remoteJid.split('@')[0])
-         +"\n📜 Here's the help menu! (Use . as the prefix)```",
-  mentions: [message.key.participant || message.key.remoteJid],
+  text: "```📜 Here's the help menu! (Use . as the prefix)```",
   quoted: null
 });
 
