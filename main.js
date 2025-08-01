@@ -94,6 +94,7 @@ const { goodnightCommand } = require('./commands/goodnight');
 const { shayariCommand } = require('./commands/shayari');
 const { rosedayCommand } = require('./commands/roseday');
 const imagineCommand = require('./commands/imagine');
+const { startLetterLeap, playLetterLeap } = require('./commands/letterleap');//remove this 
 
 
 // Global settings
@@ -102,7 +103,7 @@ global.author = settings.author;
 global.channelLink = "https://whatsapp.com/channel/0029Vb6FbLK3GJOsGeEH2t2F";
 global.ytch = "MAX👾🤖👾";
 
-// Add this near the top of main.js with other global configurations
+// Channel Info
 const channelInfo = {
     contextInfo: {
         forwardingScore: 1,
@@ -164,16 +165,11 @@ async function handleMessages(sock, messageUpdate, printLog) {
             return;
         }
 
-        // First check if it's a game move
-        if (/^[1-9]$/.test(userMessage) || userMessage.toLowerCase() === 'surrender') {
-            await handleTicTacToeMove(sock, chatId, senderId, userMessage);
-            return;
-        }
 
           // Basic message response in private chat
           if (!isGroup && (userMessage === 'hi' || userMessage === 'hello' || userMessage === 'Zabdiel' || userMessage === 'bot' || userMessage === 'fwesh' || userMessage === 'hey' || userMessage === 'bro')) {
               await sock.sendMessage(chatId, {
-                  text: 'Hi, This is MAX👾🤖👾, How can I help you?\nYou can use .menu for more info and commands.',
+                  text: 'This is MAX👾🤖👾, How can I help you?\nYou can use .menu for more info and commands.',
                   ...channelInfo
               });
               return;
@@ -502,6 +498,16 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage === '.ping':
                 await pingCommand(sock, chatId);
                 break;
+                case userMessage.startsWith('.leap'): {
+                    const text = userMessage.replace('.leap', '').trim().toLowerCase();
+                
+                    if (text === 'start') {
+                        await startLetterLeap(sock, chatId, senderId, text);
+                    } else {
+                        await playLetterLeap(sock, chatId, senderId, text);
+                    }
+                    break;
+                }                
             case userMessage === '.alive':
                 await aliveCommand(sock, chatId);
                 break;
