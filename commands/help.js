@@ -7,7 +7,7 @@ async function helpCommand(sock, chatId, channelLink) {
 
 ╔════════════════════╗
    🤖 *${settings.botName|| 'MAX👾🤖👾'}*  
-   🌟 VERSION:   *${settings.version|| '2.0.0'}*
+   📀 VERSION:   *${settings.version|| '2.0.0'}*
    🛠️ DEVELOPER: *${settings.botOwner|| '⚜𝒵𝒜𝐵_𝒟𝐼𝐸𝐿⚜'}*
    🧩 PREFIX: *.*
    🔗 GITHUB: *@FWESH001*
@@ -89,6 +89,7 @@ AVAILABLE COMMANDS:
 ╔═══════════════════╗
 🕹️ GAME COMMANDS:
 ➤
+║ ✧ 🔠 .leap start
 ║ ✧ ❌⭕ .tictactoe @user
 ║ ✧ 🧩 .hangman
 ║ ✧ 🔠 .guess <letter>

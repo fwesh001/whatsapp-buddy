@@ -18,10 +18,6 @@ function formatTime(seconds) {
     return time.trim();
 }
 
-// Show processing message
-        await sock.sendMessage(chatId, {
-            react: { text: '🤖', key: message.key }
-        });
 
 async function pingCommand(sock, chatId, message) {
     try {
